@@ -1,15 +1,16 @@
 {
   "applinks": {
-      "details": [
-           {
-             "appIDs": [ "6XEJ25LS8P.jp.co.agecode.matsurika"],
-             "components": [
-               {
-                  "/": "/ticket-assignment/*"
-                }
-             ]
-           }
-       ]
+    "apps": [],
+    "details": [
+          {
+            "appIDs": [ "6XEJ25LS8P.jp.co.agecode.matsurika"],
+            "components": [
+              {
+                "/": "/ticket-assignment/*"
+              }
+            ]
+          }
+      ]
    },
    "webcredentials": {
       "apps": [ "6XEJ25LS8P.jp.co.agecode.matsurika" ]
