@@ -24,6 +24,8 @@ var options = {
 }
 app.use(express.static('public', options))
 
+app.use('/.well-known', express.static(path.join(__dirname, 'public', '.well-known')));
+
 // #############################################################################
 // Catch all handler for all other request.
 app.use('*', (req,res) => {
