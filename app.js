@@ -25,7 +25,14 @@ var options = {
 app.use(express.static('public', options))
 
 app.use('/.well-known', express.static(path.join(__dirname, 'public', '.well-known')));
+app.get('/ticket-assignment/:id', (req, res) => {
+  // Lấy giá trị id từ URL
+  const { id } = req.params;
+  console.log("id nef ", id)
 
+  // Phản hồi với trang HTML ticket.html
+  res.sendFile(path.join(__dirname, 'public', 'ticket.html'));
+});
 // #############################################################################
 // Catch all handler for all other request.
 app.use('*', (req,res) => {
