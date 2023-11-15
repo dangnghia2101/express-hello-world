@@ -29,6 +29,7 @@ app.get('/ticket-assignment/:id', (req, res) => {
   // Lấy giá trị id từ URL
   const { id } = req.params;
   console.log("id nef ", id)
+  res.redirect(`/index.html`);
 
   // Phản hồi với trang HTML ticket.html
   res.sendFile(path.join(__dirname, 'public', 'ticket.html'));
