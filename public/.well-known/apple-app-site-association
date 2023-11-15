@@ -5,9 +5,8 @@
              "appIDs": [ "6XEJ25LS8P.jp.co.agecode.matsurika"],
              "components": [
                {
-                  "/": "/ticket-assignment/*",
-                  "exclude": true
-               }
+                  "/": "/ticket-assignment/*"
+                }
              ]
            }
        ]
